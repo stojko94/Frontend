@@ -1,0 +1,10 @@
+<form>
+  ID: <input type="number" #iid><br>
+  Name: <input type="text" #iname ><br>
+  Surname: <input type="text" #iSurname ><br>
+  Age: <input type="number" #iAge ><br>
+  Address: <input type="text" #iAddress ><br>
+  City: <input type="text" #iCity ><br>
+  State: <input type="text" #iState ><br>
+  <button (click)="EditUser(iid.value, iname.value, iSurname.value, iAge.value, iAddress.value, iCity.value, iState.value)">Click me for add user</button>
+</form>

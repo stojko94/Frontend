@@ -1,0 +1,42 @@
+<!--
+<link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
+
+<p-table >
+  <ng-template pTemplate="header">
+      <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body">
+      <tr>
+        <td>{{people.id}}</td>
+        <td>{{people.name}}</td>
+        <td>{{people.surname}}</td>
+        <td>{{people.age}}</td>
+        <td>{{people.adress}}</td>
+        <td>{{people.city}}</td>
+        <td>{{people.state}}</td>
+      </tr>
+  </ng-template>
+</p-table>-->
+
+
+<ul>
+  <li>ID: {{people.id}}</li>
+  <li>Name: {{people.name}}</li>
+  <li>Surname: {{people.surname}}</li>
+  <li>Age: {{people.age}}</li>
+  <li>Address: {{people.adress}}</li>
+  <li>City: {{people.city}}</li>
+  <li>State: {{people.state}}</li>
+</ul>  
+<button routerLink="/edit">Edit</button><br>
+<button (click)="DeleteUser(people.id)" routerLink="">Delete</button>

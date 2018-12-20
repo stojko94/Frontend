@@ -1,0 +1,39 @@
+<!--<link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
+
+<p-table [value]="people">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-peop>
+      <tr>
+        <td>{{peop.id}}</td>
+        <td>{{peop.name}}</td>
+        <td>{{peop.surname}}</td>
+        <td>{{peop.age}}</td>
+        <td>{{peop.adress}}</td>
+        <td>{{peop.city}}</td>
+        <td>{{peop.state}}</td>
+      </tr>
+  </ng-template>
+</p-table>-->
+<table>
+<tr *ngFor="let peop of people">
+    <td>{{peop.id}}</td>
+    <td><a [routerLink]="['/data', peop.id]">{{peop.name}}</a></td>
+    <td>{{peop.surname}}</td>
+    <td>{{peop.age}}</td>
+    <td>{{peop.adress}}</td>
+    <td>{{peop.city}}</td>
+    <td>{{peop.state}}</td>
+  </tr>
+</table>
